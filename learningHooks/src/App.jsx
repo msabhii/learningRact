@@ -1,7 +1,9 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
-  let counter = 5;
+  const [counter, setCounter] = useState();
+  // let counter = 5;
   return (
     <>
       <h1>mscode</h1>
