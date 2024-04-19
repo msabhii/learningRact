@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ props }) => {
+const Card = ({ name }) => {
   return (
     <div>
       <div class="relative h-[400px] w-[300px] rounded-md">
@@ -11,7 +11,7 @@ const Card = ({ props }) => {
         />
         <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
         <div class="absolute bottom-4 left-4 text-left">
-          <h1 class="text-lg font-semibold text-white">Delba</h1>
+          <h1 class="text-lg font-semibold text-white">{name}</h1>
           <p class="mt-2 text-sm text-gray-300">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
             debitis?
