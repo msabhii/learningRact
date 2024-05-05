@@ -22,7 +22,6 @@ function App() {
   };
 
   const toggleComplete = (id) => {
-    //console.log(id);
     setTodos((prev) =>
       prev.map((prevTodo) =>
         prevTodo.id === id
@@ -56,7 +55,6 @@ function App() {
             <TodoForm />
           </div>
           <div className="flex flex-wrap gap-y-3">
-            {/*Loop and Add TodoItem here */}
             {todos.map((todo) => {
               return (
                 <div key={todo.id} className="w-full">
