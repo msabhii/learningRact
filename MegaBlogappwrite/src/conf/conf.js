@@ -5,3 +5,4 @@ const conf = {
   appwriteBucketID: String(import.meta.evn.VITE_APPWRITE_BUCKET_ID),
 };
 export default conf;
+ 
