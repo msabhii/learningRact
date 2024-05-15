@@ -1,6 +1,5 @@
-import { Client, Account, ID } from "appwrite";
+import { Account, ID } from "appwrite";
 import conf from "../conf/conf";
-import { Client, Account, ID } from "appwrite";
 
 //? Creating Class
 export class AuthServices {
