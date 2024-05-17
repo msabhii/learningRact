@@ -1,9 +1,9 @@
-import { Account, ID } from "appwrite";
+import { Account, Client, ID } from "appwrite";
 import conf from "../conf/conf";
 
 //? Creating Class
 export class AuthServices {
-  client = new this.client();
+  client = new Client();
   account;
 
   constructor() {
