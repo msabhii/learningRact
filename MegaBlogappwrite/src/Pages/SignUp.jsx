@@ -1,6 +1,8 @@
 import React from "react";
-import { Signup as SignupComponent } from "../components/Signup";
-const SignUP = () => {
+import { SignUP as SignupComponent } from "../components";
+// import { Signup as SignupComponent } from "../components/Signup";
+
+const SignUp = () => {
   return (
     <div className="py-8">
       <SignupComponent />
@@ -8,4 +10,4 @@ const SignUP = () => {
   );
 };
 
-export default SignUP;
+export default SignUp;
