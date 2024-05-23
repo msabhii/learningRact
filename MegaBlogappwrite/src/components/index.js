@@ -11,6 +11,8 @@ import SignUP from "../Pages/SignUP";
 import Login from "../Pages/Login";
 import PostForm from "./Post-form/PostForm";
 import PostCard from "./PostCard";
+import AuthLayout from "./AuthLayout";
+
 
 export {
   Header,
@@ -26,4 +28,5 @@ export {
   Login,
   PostForm,
   PostCard,
+  AuthLayout,
 };
