@@ -5,7 +5,6 @@ import conf from "../conf/conf";
 export class AuthServices {
   client = new Client();
   account;
-
   constructor() {
     this.client
       .setEndpoint(conf.appwriteUrl)
@@ -34,9 +33,9 @@ export class AuthServices {
   //* Method to Login
   async login({ email, password }) {
     try {
-      return await this.account.createEmailSession(email, password);
+      return await this.account.createEmailPasswordSession(email, password);
     } catch (error) {
-      throw error;
+      console.log("Appwrite serive :: LoginService :: error", error);
     }
   }
   //* Method to getCurrentUser Account
@@ -44,8 +43,9 @@ export class AuthServices {
     try {
       return await this.account.get();
     } catch (error) {
-      throw error;
+      console.log("Appwrite serive :: getCurrentUser :: Error =>", error);
     }
+
     return null;
   }
 
@@ -54,7 +54,7 @@ export class AuthServices {
     try {
       await this.account.deleteSessions();
     } catch (error) {
-      throw error;
+      console.log("Appwrite serive :: getCurrentUser :: error", error);
     }
   }
 }

@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { Link, Navigate, useNavigate } from "react-router-dom";
-import authServices from "../appWrite/auth";
-import { login } from "../Store/authSlice";
-import { Button, Login, Input } from "./index";
 import { useForm } from "react-hook-form";
+import { useDispatch } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { login } from "../Store/authSlice";
+import authServices from "../appWrite/auth";
+import { Button, Input, Logo } from "./index";
+//! -----------------------------------Improt Statements-----------------------------------
 
-const Signup = () => {
+const SignupComponent = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [error, setError] = useState("");
@@ -84,5 +85,4 @@ const Signup = () => {
     </div>
   );
 };
-
-export default Signup;
+export default SignupComponent;
