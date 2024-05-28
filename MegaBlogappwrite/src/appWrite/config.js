@@ -62,7 +62,7 @@ export class Service {
       );
       return true;
     } catch (error) {
-      console.log("AppWrite Service :: CreatePost::", error);
+      console.log("AppWrite Service :: DeletePost::", error);
       return false;
     }
   }
